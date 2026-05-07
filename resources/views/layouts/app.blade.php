@@ -8,6 +8,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
     <style>
+        :root {
+            --bs-primary: #1b633f;
+            --bs-primary-rgb: 27, 99, 63;
+        }
         body { background-color: #f0f2f5; min-height: 100vh; display: flex; flex-direction: column; }
         main { flex: 1; }
         .navbar-brand { font-weight: 700; letter-spacing: -0.5px; }
