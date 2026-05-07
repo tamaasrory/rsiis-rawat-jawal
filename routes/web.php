@@ -23,10 +23,12 @@ Route::post('kunjungan/{kunjungan}/batal', [KunjunganController::class, 'batal']
 Route::post('pasien/{pasien}/kunjungan', [KunjunganController::class, 'store'])
     ->name('kunjungan.store');
 
-// Modul Asesmen (placeholder, Fase 3)
+// Modul Asesmen
 Route::get('asesmen', [AsesmenController::class, 'index'])->name('asesmen.index');
 Route::get('asesmen/create/{kunjungan}', [AsesmenController::class, 'create'])->name('asesmen.create');
+Route::post('asesmen', [AsesmenController::class, 'store'])->name('asesmen.store');
 Route::get('asesmen/{asesmen}/edit', [AsesmenController::class, 'edit'])->name('asesmen.edit');
+Route::put('asesmen/{asesmen}', [AsesmenController::class, 'update'])->name('asesmen.update');
 
 // Modul Laporan (placeholder, Fase 4)
 Route::get('laporan', [LaporanController::class, 'index'])->name('laporan.index');
