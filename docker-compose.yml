@@ -1,9 +1,9 @@
 services:
   app:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    image: ghcr.io/tamaasrory/rsiis:latest
+    # build:
+    #   context: .
+    #   dockerfile: Dockerfile
+    image: ghcr.io/tamaasrory/rsiis:main
     ports:
       - "8080:80"
     environment:

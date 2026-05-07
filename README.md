@@ -64,6 +64,20 @@ php artisan serve
 
 Akses di browser: `http://localhost:8000`
 
+---
+
+## Cara Menjalankan (via Docker)
+Cara termudah untuk mencoba aplikasi tanpa setup PHP atau MySQL di komputer Anda adalah menggunakan Docker. Image sudah di-build otomatis di GitHub Container Registry.
+
+1. Buka terminal di folder ini (atau cukup unduh file `docker-compose.yml` ini).
+2. Jalankan perintah:
+```bash
+docker-compose up -d
+```
+3. Buka browser: `http://localhost:8080`
+
+*(Catatan: Container database MySQL akan secara otomatis mengisi tabel dengan data default saat pertama kali dijalankan).*
+
 ## Struktur Database
 - **pasien** — data pribadi pasien
 - **poli** — master data poli
